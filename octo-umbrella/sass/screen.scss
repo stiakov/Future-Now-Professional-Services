@@ -1,0 +1,254 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+ /*VARIABLES*/
+ 
+ $font-stack: "Helvetica Neue",
+ Helvetica,
+ Roboto,
+ Arial,
+ sans-serif;
+ $primary-color: black;
+ $secondary-color: gray;
+ $default-bg-color: white;
+ 
+ /*GENERAL STYLES*/
+ 
+ .body {
+     margin: 0;
+     padding: 0;
+     background: $default-bg-color;
+     font-family: $font-stack;
+     font-weight: normal;
+     line-height: 1.5;
+     color: $primary-color;
+ }
+ 
+ // .container is main centered wrapper with a max width of 112.0rem (1120px)
+ .container {
+     margin: 0 auto;
+     max-width: 112.0rem;
+     padding: 0 2.0rem;
+     position: relative;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .navbar {
+     width: 100%;
+     height: 20px;
+     display: inline-block;
+ }
+ 
+ /*CONTENT*/
+ 
+ .center-wrapper {
+     width: 80%;
+     display: flex;
+     justify-self: center;
+ }
+ 
+ /*DISPLAY SETTINGS*/
+ 
+ .d-flex {
+     display: flex;
+ }
+ 
+ .row-nw-flex {
+     flex-flow: row nowrap;
+ }
+ 
+ .column-nw-flex {
+     flex-flow: column nowrap;
+ }
+ 
+ .row-reverse {
+     flex-direction: row-reverse;
+ }
+ 
+ .col-reverse {
+     flex-direction: column-reverse;
+ }
+ 
+ .hide {
+     display: none;
+ }
+ 
+ .center-content {
+     justify-content: center;
+     text-align: center;
+ }
+ 
+ .end-content {
+     justify-content: flex-end;
+     text-align: end;
+ }
+ 
+ .top-content {
+     align-items: flex-start;
+ }
+ 
+ .middle-content {
+     align-items: center;
+ }
+ .first-content{ //displays content first without moving anything else
+    order: -1; 
+ }
+ /*BUTTON, LISTS AND IMAGES*/
+ 
+ .style-list-clear {
+     list-style-type: none;
+ }
+ 
+ .button,
+ button,
+ input[type='button'],
+ input[type='reset'],
+ input[type='submit'] {
+     background-color: $default-bg-color;
+     border: .1rem solid $color-primary;
+     border-radius: .4rem;
+     color: $color-primary;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 1.1rem;
+     font-weight: 700;
+     height: 3.8rem;
+     letter-spacing: .1rem;
+     line-height: 3.8rem;
+     padding: 0 3.0rem;
+     text-align: center;
+     text-decoration: none;
+     text-transform: uppercase;
+     white-space: nowrap;
+ }
+ 
+ .button:hover {
+     font-weight: bolder;
+     background: $default-bg-color;
+ }
+ 
+ .gray-link {
+     text-decoration: none;
+     color: $secondary-color;
+ }
+ 
+ .gray-link:hover {
+     color: $primary-color;
+ }
+ 
+ .image-style {
+     display: inline-block;
+     vertical-align: middle;
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ /*FONT STYLING : HEADERS*/
+ 
+ b,
+ strong {
+     font-weight: bold;
+ }
+ 
+ p {
+     margin-top: 0;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-weight: 300;
+     letter-spacing: -.1rem;
+     margin-bottom: 2.0rem;
+     margin-top: 0;
+ }
+ 
+ h1 {
+     font-size: 4.6rem;
+     line-height: 1.2px;
+ }
+ 
+ h2 {
+     font-size: 3.6rem;
+     line-height: 1.25px;
+ }
+ 
+ h3 {
+     font-size: 2.8rem;
+     line-height: 1.3px;
+ }
+ 
+ h4 {
+     font-size: 2.2rem;
+     letter-spacing: -.08rem;
+     line-height: 1.35px;
+ }
+ 
+ h5 {
+     font-size: 1.8rem;
+     letter-spacing: -.05rem;
+     line-height: 1.5px;
+ }
+ 
+ h6 {
+     font-size: 1.6rem;
+     letter-spacing: 0;
+     line-height: 1.4px;
+ }
+ 
+ /*MARGIN SETTINGS*/
+ 
+ .tmargin-10 {
+     margin-top: 10px;
+ }
+ 
+ .tmargin-20 {
+     margin-top: 20px;
+ }
+ 
+ .no-bottom-margin {
+     margin-bottom: 0;
+ }
+ 
+ .bmargin10 {
+     margin-bottom: 10px;
+ }
+ 
+ .lmargin-10 {
+     margin-left: 10px;
+ }
+ 
+ .lmargin-20 {
+     margin-left: 20px;
+ }
+ 
+ .rmargin10 {
+     margin-right: 10px;
+ }
+ 
+ .rmargin20 {
+     margin-right: 20px;
+ }
+ 
+ /*FOOTER*/
+ 
+ .footer-container {
+     height: auto;
+     width: 100%;
+     display: inline-block;
+ }
