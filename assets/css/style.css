@@ -72,6 +72,12 @@ table {
 .color-gray-100 {
   color: #ededed; }
 
+.bg-bw-100 {
+  background: black; }
+
+.color-bw-100 {
+  color: black; }
+
 .bg-pink-200 {
   background: #e3b1bf; }
 
@@ -101,6 +107,12 @@ table {
 
 .color-gray-200 {
   color: #e0e0e0; }
+
+.bg-bw-200 {
+  background: black; }
+
+.color-bw-200 {
+  color: black; }
 
 .bg-pink-300 {
   background: #dc9eaf; }
@@ -132,6 +144,12 @@ table {
 .color-gray-300 {
   color: lightgray; }
 
+.bg-bw-300 {
+  background: black; }
+
+.color-bw-300 {
+  color: black; }
+
 .bg-pink-400 {
   background: #d58ba0; }
 
@@ -161,6 +179,12 @@ table {
 
 .color-gray-400 {
   color: #c5c5c5; }
+
+.bg-bw-400 {
+  background: black; }
+
+.color-bw-400 {
+  color: black; }
 
 .bg-pink-500 {
   background: #ce7790; }
@@ -192,6 +216,12 @@ table {
 .color-gray-500 {
   color: #b8b8b8; }
 
+.bg-bw-500 {
+  background: black; }
+
+.color-bw-500 {
+  color: black; }
+
 .bg-pink-600 {
   background: #c76480; }
 
@@ -221,6 +251,12 @@ table {
 
 .color-gray-600 {
   color: #ababab; }
+
+.bg-bw-600 {
+  background: black; }
+
+.color-bw-600 {
+  color: black; }
 
 .bg-pink-700 {
   background: #c05170; }
@@ -252,6 +288,12 @@ table {
 .color-gray-700 {
   color: #9e9e9e; }
 
+.bg-bw-700 {
+  background: black; }
+
+.color-bw-700 {
+  color: black; }
+
 .bg-pink-800 {
   background: #b64162; }
 
@@ -281,6 +323,12 @@ table {
 
 .color-gray-800 {
   color: #919191; }
+
+.bg-bw-800 {
+  background: black; }
+
+.color-bw-800 {
+  color: black; }
 
 .bg-pink-900 {
   background: #a23a57; }
@@ -312,6 +360,12 @@ table {
 .color-gray-900 {
   color: #848484; }
 
+.bg-bw-900 {
+  background: black; }
+
+.color-bw-900 {
+  color: black; }
+
 .bg-pink-1000 {
   background: #8f334d; }
 
@@ -341,6 +395,12 @@ table {
 
 .color-gray-1000 {
   color: #777777; }
+
+.bg-bw-1000 {
+  background: black; }
+
+.color-bw-1000 {
+  color: black; }
 
 .bg-pink-1100 {
   background: #7c2c43; }
@@ -372,6 +432,12 @@ table {
 .color-gray-1100 {
   color: #6a6a6a; }
 
+.bg-bw-1100 {
+  background: black; }
+
+.color-bw-1100 {
+  color: black; }
+
 .bg-pink-1200 {
   background: #682538; }
 
@@ -402,10 +468,23 @@ table {
 .color-gray-1200 {
   color: #5c5c5c; }
 
+.bg-bw-1200 {
+  background: black; }
+
+.color-bw-1200 {
+  color: black; }
+
+.bg-bw-0 {
+  background: black; }
+
+.color-bw-0 {
+  color: black; }
+
 /* 
 Aplica color al fondo
 rango 100 - 1200 con saltos de 100 en 100
 
+.bg-bw-0 (Black Background) -> .bg-bw-1200 (White)
 .bg-pink-100
 .bg-purple-100
 .bg-cyan-100
@@ -415,6 +494,7 @@ rango 100 - 1200 con saltos de 100 en 100
 Aplica color al texto
 rango 100 - 1200 con saltos de 100 en 100
 
+.color-bw-0 (Black Color) -> .color-bw-1200 (White)
 .color-pink-100
 .color-purple-100
 .color-cyan-100
