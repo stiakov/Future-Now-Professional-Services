@@ -6,12 +6,12 @@ $(document).ready(function () {
     $('.blurred-image').css('opacity', opacityVal);
     
     console.log("hola",$(window).scrollTop())
-    if ($(window).scrollTop() > 40) {
+    if ($(window).scrollTop() > 680) {
       $('#nav-bar').addClass('navbar-fixed');
       $('.navbar-fixed').css({"background-color":"black"});
       $('.navbar-fixed').css({"opacity":"0.5"});
     }
-    if ($(window).scrollTop() < 39) {
+    if ($(window).scrollTop() < 680) {
       $('#nav-bar').removeClass('navbar-fixed');
       $('#nav-bar').removeAttr("style");
     }

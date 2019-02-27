@@ -7812,22 +7812,29 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .img-opacity-5 -> Rango 5, 10, 15 ... 100. Setea la opacidad de una imagen siendo 5 el minimo de opacidad y 100 es el max.
 .img-grayscale-5 -> Rango 5, 10, 15 ... 100. Setea la escala de grises de una imagen siendo 5 el minimo de color y 100 el max.
 */
-.img-square {
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  padding: 7px; }
+.box-square {
+  position: relative;
+  width: 100%;
+  /* desired width */
+  box-sizing: border-box; }
 
-.img-square:after {
+.box-square:before {
   content: "";
   display: block;
-  padding-bottom: 100%; }
+  padding-top: 100%;
+  /* initial ratio of 1:1*/ }
 
-.content {
-  min-height: 200px;
+.img-content {
+  padding: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   min-width: 100%;
-  object-fit: contain;
-  background-repeat: no-repeat; }
+  min-height: 100%; }
 
 .position-static {
   position: static; }
@@ -7860,7 +7867,9 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   position: fixed;
   width: 100%;
   margin-top: 0;
-  padding-top: 20px; }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px; }
 
 .hover-parent ul:hover {
   opacity: 0.5; }
