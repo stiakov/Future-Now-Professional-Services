@@ -1,9 +1,18 @@
 
 .nav-bar{
   display: block;
+  margin-top: 50px;
 }
 
 .nav-item{
   display: inline-block;
 }
 
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 20px;
+}

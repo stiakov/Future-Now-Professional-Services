@@ -1,13 +1,13 @@
 
 
 .hover-parent{
-ul:hover > li{
+ul:hover{
   opacity: 0.5;
 }
 }
 
-.hover-child{
-  ul:hover>a:hover {
+.hover-parent{  
+  a:hover {
   opacity: 1.0;
 }
 }
