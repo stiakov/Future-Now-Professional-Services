@@ -16,8 +16,12 @@
 
       .bg-gray-#{$i*100} {background:darken($gray, $i*5.15%); }
       .color-gray-#{$i*100} {color:darken($gray, $i*5.15%); }
-  }
-}
+      
+      .bg-bw-#{$i*100} {background:darken(black, $i*8.33%); }
+      .color-bw-#{$i*100} {color:darken(black, $i*8.33%); }
+    }
+    .bg-bw-0 {background:darken(black, 0%); }
+    .color-bw-0 {color:darken(black, 0%); }}
 
 @include color-setter();
 
@@ -25,6 +29,7 @@
 Aplica color al fondo
 rango 100 - 1200 con saltos de 100 en 100
 
+.bg-bw-0 (Black Background) -> .bg-bw-1200 (White)
 .bg-pink-100
 .bg-purple-100
 .bg-cyan-100
@@ -34,6 +39,7 @@ rango 100 - 1200 con saltos de 100 en 100
 Aplica color al texto
 rango 100 - 1200 con saltos de 100 en 100
 
+.color-bw-0 (Black Color) -> .color-bw-1200 (White)
 .color-pink-100
 .color-purple-100
 .color-cyan-100
