@@ -73,10 +73,10 @@ table {
   color: #ededed; }
 
 .bg-bw-100 {
-  background: black; }
+  background: #151515; }
 
 .color-bw-100 {
-  color: black; }
+  color: #151515; }
 
 .bg-pink-200 {
   background: #e3b1bf; }
@@ -109,10 +109,10 @@ table {
   color: #e0e0e0; }
 
 .bg-bw-200 {
-  background: black; }
+  background: #2a2a2a; }
 
 .color-bw-200 {
-  color: black; }
+  color: #2a2a2a; }
 
 .bg-pink-300 {
   background: #dc9eaf; }
@@ -145,10 +145,10 @@ table {
   color: lightgray; }
 
 .bg-bw-300 {
-  background: black; }
+  background: #404040; }
 
 .color-bw-300 {
-  color: black; }
+  color: #404040; }
 
 .bg-pink-400 {
   background: #d58ba0; }
@@ -181,10 +181,10 @@ table {
   color: #c5c5c5; }
 
 .bg-bw-400 {
-  background: black; }
+  background: #555555; }
 
 .color-bw-400 {
-  color: black; }
+  color: #555555; }
 
 .bg-pink-500 {
   background: #ce7790; }
@@ -217,10 +217,10 @@ table {
   color: #b8b8b8; }
 
 .bg-bw-500 {
-  background: black; }
+  background: #6a6a6a; }
 
 .color-bw-500 {
-  color: black; }
+  color: #6a6a6a; }
 
 .bg-pink-600 {
   background: #c76480; }
@@ -253,10 +253,10 @@ table {
   color: #ababab; }
 
 .bg-bw-600 {
-  background: black; }
+  background: #7f7f7f; }
 
 .color-bw-600 {
-  color: black; }
+  color: #7f7f7f; }
 
 .bg-pink-700 {
   background: #c05170; }
@@ -289,10 +289,10 @@ table {
   color: #9e9e9e; }
 
 .bg-bw-700 {
-  background: black; }
+  background: #959595; }
 
 .color-bw-700 {
-  color: black; }
+  color: #959595; }
 
 .bg-pink-800 {
   background: #b64162; }
@@ -325,10 +325,10 @@ table {
   color: #919191; }
 
 .bg-bw-800 {
-  background: black; }
+  background: #aaaaaa; }
 
 .color-bw-800 {
-  color: black; }
+  color: #aaaaaa; }
 
 .bg-pink-900 {
   background: #a23a57; }
@@ -361,10 +361,10 @@ table {
   color: #848484; }
 
 .bg-bw-900 {
-  background: black; }
+  background: #bfbfbf; }
 
 .color-bw-900 {
-  color: black; }
+  color: #bfbfbf; }
 
 .bg-pink-1000 {
   background: #8f334d; }
@@ -397,10 +397,10 @@ table {
   color: #777777; }
 
 .bg-bw-1000 {
-  background: black; }
+  background: #d4d4d4; }
 
 .color-bw-1000 {
-  color: black; }
+  color: #d4d4d4; }
 
 .bg-pink-1100 {
   background: #7c2c43; }
@@ -433,10 +433,10 @@ table {
   color: #6a6a6a; }
 
 .bg-bw-1100 {
-  background: black; }
+  background: #eaeaea; }
 
 .color-bw-1100 {
-  color: black; }
+  color: #eaeaea; }
 
 .bg-pink-1200 {
   background: #682538; }
@@ -469,10 +469,10 @@ table {
   color: #5c5c5c; }
 
 .bg-bw-1200 {
-  background: black; }
+  background: white; }
 
 .color-bw-1200 {
-  color: black; }
+  color: white; }
 
 .bg-bw-0 {
   background: black; }
