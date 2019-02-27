@@ -7756,6 +7756,12 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .nav-item {
   display: inline-block; }
 
+.hover-parent ul:hover > li {
+  opacity: 0.5; }
+
+.hover-child ul:hover > a:hover {
+  opacity: 1.0; }
+
 .main-container {
   width: 100vw;
   height: auto; }

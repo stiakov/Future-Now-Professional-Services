@@ -1,4 +1,13 @@
 
-.nav-item:hover{
-  
+
+.hover-parent{
+ul:hover > li{
+  opacity: 0.5;
+}
+}
+
+.hover-child{
+  ul:hover>a:hover {
+  opacity: 1.0;
+}
 }
