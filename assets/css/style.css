@@ -7813,7 +7813,6 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .img-grayscale-5 -> Rango 5, 10, 15 ... 100. Setea la escala de grises de una imagen siendo 5 el minimo de color y 100 el max.
 */
 .img-square {
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -7825,10 +7824,9 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   padding-bottom: 100%; }
 
 .content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  min-height: 200px;
+  min-width: 100%;
+  object-fit: contain;
   background-repeat: no-repeat; }
 
 .position-static {
