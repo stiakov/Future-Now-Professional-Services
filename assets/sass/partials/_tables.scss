@@ -1,0 +1,198 @@
+/*TABLE STYLING
+
+Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 10px */
+
+@mixin styles-border {
+  @for $i from 1 through 10 {
+    .border-solid-#{$i} {
+      border: #{$i}px
+      solid $gray300;
+    }
+    .border-dotted-#{$i} {
+      border: #{$i}px
+      dotted $gray300;
+    }
+    .border-dashed-#{$i} {
+      border: #{$i}px
+      dashed $gray300;
+    }
+    .border-double-#{$i} {
+      border: #{$i}px
+      double $gray300;
+    }
+  }
+}
+
+//Crea bordes especificos (top, bottom, left, right) en linea solida color gris que van de 1 a 10px
+
+@mixin direction-border {
+  @for $i from 1 through 10 {
+    .border-top-#{$i} {
+      border-top: #{$i}px
+      solid $gray300;
+    }
+    .border-bottom-#{$i} {
+      border-bottom: #{$i}px
+      solid $gray300;
+    }
+    .border-right-#{$i} {
+      border-right: #{$i}px
+      solid $gray300;
+    }
+    .border-left-#{$i} {
+      border-left: #{$i}px
+      solid $gray300;
+    }
+  }
+}
+
+//Crea bordes redondeados para tablas, oscila entre el 1% y el 25% 
+@mixin rounded-border {
+  @for $i from 1 through 25 {
+    .rounded-border-#{$i}-px {
+      border-radius: #{$i}px;
+    }
+  }
+  @for $i from 1 through 100 {
+    $res: (percentage($i)/100);
+    .rounded-border-#{$i}-per {
+      border-radius:#{$res};
+    }
+  }
+}
+
+@mixin column-width-max{
+  @for $i from 2 through 25{
+    .column-width-#{$i}{
+      $res: (percentage(1/($i)));
+      width: #{$res};
+    }
+  }
+}
+
+//Crea padding para la tabla en un rango de 1 a 30px con saltos de 1px y de 5 a 100% con saltos de 5%
+@mixin table-padding {
+  @for $i from 1 through 30 {
+    .table-padding-#{$i} {
+      padding: #{$i}px;
+    }
+  }
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .table-padding-#{$count}-per {
+      padding:#{$res};
+      $count: $count +5;
+    }
+  }
+}
+/*INCLUDES*/
+
+@include styles-border;
+@include rounded-border;
+@include direction-border;
+@include table-padding;
+@include column-width-max;
+
+/*DEFAULT BASIC TABLE SETTING*/
+
+//Settings de la tabla por default
+.table{
+  width: 100%;
+  vertical-align: middle;
+  th {
+    border: .5px solid $gray300;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  td {
+    border: .5px solid $gray300;
+  }
+}
+.table-stripped {
+  vertical-align: middle;
+  width: 100%;
+  tr:nth-child(even){
+    background-color: #F5F3F3;
+  }
+  th {
+    border-bottom: .5px solid $gray300;
+    font-weight: bolder;
+    text-transform: capitalize;  
+  }
+}
+.table-borders {
+  vertical-align: middle;
+  width: 100%;
+  td, th{
+    border: .5px solid $gray300;
+  }
+  th {
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+}
+
+.table-separate {
+  vertical-align: middle;
+  width: 100%;
+  border: .5px solid $gray300;
+  border-spacing: 2px;
+  border-collapse: separate;
+  height: 2rem;
+  tr:nth-child(even){
+    background-color: #F5F3F3;
+  }
+  td, th{
+    border: .5px solid $gray300;
+    padding: 5px;
+  }
+  th {
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+}
+/*SETTING UP CLASSES WITH FIXED VALUES*/
+
+//Esconde los bordes de la tabla
+.hidden-border {
+  border-style: hidden;
+}
+
+//Elimina el estilo de los bordes
+.no-border {
+  border-style: none;
+}
+
+//Desaparece el espacio entre bordes
+.collapse-borders {
+  border-top: 1px solid $gray300;
+  border-collapse: collapse;
+}
+
+//Separa los bordes de las celdas, de manera que hay un espacio entre ellas
+.separate-borders {
+  border: 1px solid $gray300;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+
+/*TABLE EFFECTS*/
+
+//Efecto de colorear una fila de color gris al pasar el puntero por ella
+.table-row:hover{
+  background-color: $gray300;
+}
+
+//Estilo de lineas grises de fondo intercaladas
+.stripped-table{
+  tr:nth-child(even){
+    background-color: #F5F3F3;
+  }
+}
+
+//Esconde celdas dentro de una tabla
+.hidden-cells{
+  empty-cells: hide;
+}

@@ -1,0 +1,320 @@
+/*SETTING DEFAULT FONTS*/
+
+// @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Anton|Arvo:400,400i,700,700i|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700%7CRoboto:400,500,700%27');
+
+//Estableciendo variables para las fuentes
+$roboto: 'Roboto',
+sans-serif;
+// $lato: 'Lato',
+// sans-serif;
+// $merri: 'Merriweather',
+// serif;
+// $arvo: 'Arvo', serif;
+// $anton: 'Anton', sans-serif;
+// $pacifico: 'Pacifico', cursive;
+$open-sans: 'Open Sans Condensed', sans-serif;
+
+//Creando las clases para font-family
+.f-family-roboto {
+  font-family: $roboto;
+}
+
+// .f-family-lato {
+//   font-family: $lato;
+// }
+
+// .f-family-merri {
+//   font-family: $merri;
+// }
+// .f-family-arvo {
+//   font-family: $arvo;
+// }
+
+// .f-family-anton {
+//   font-family: $anton;
+// }
+
+// .f-family-pacifico {
+//   font-family: $pacifico;
+// }
+.f-family-open-sans {
+  font-family: $open-sans;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px gray;
+  // -1px -1px 0 #000,
+  // 1px -1px 0 #000,
+  // -1px 1px 0 #000,
+  // 1px 1px 0 #000;
+}
+
+.text-shadow-outline {
+  text-shadow: 
+  -1px -1px 0 gray,
+  1px -1px 0 gray,
+  -1px 1px 0 gray,
+  1px 1px 0 gray;
+}
+/*MIXINS*/
+
+//Crea clases para font weight con un rango de 100 a 900, con saltos de 100
+@mixin f-weight {
+  @for $i from 1 through 9 {
+    .font-weight-#{$i*100} {
+      font-weight: #{$i*100};
+    }
+  }
+}
+
+//Crea clases para line-height con un rango de 1 a 20px y saltos de 1px
+@mixin l-height {
+  @for $i from 1 through 600 {
+    .line-height-#{$i} {
+      line-height: #{$i}px;
+    }
+  }
+  @for $i from 1 through 10 {
+    .center-text-container-#{$i}{
+     line-height: #{$i};
+     text-align:center;     
+    }
+  }
+}
+
+//Establece clases para la indentacion de texto con rango de 1 a 10px con salto de 1px
+@mixin indent {
+  @for $i from 1 through 10 {
+    .indent-#{$i} {
+      text-indent: #{$i}px;
+    }
+  }
+}
+
+//Establece espacio entre letras con rango de 1 a 10px con salto de 1px
+@mixin letter-space {
+  @for $i from 1 through 10 {
+    .letter-space-#{$i} {
+      letter-spacing: #{$i}px;
+    }
+  }
+}
+
+//Establece el alineamiento vertical en pixeles con rango de 1 a 20px y saltos de 1px
+@mixin vertical-alignment-px {
+  @for $i from 1 through 20 {
+    .vertical-align-#{$i} {
+      vertical-align: #{$i}px;
+    }
+  }
+}
+
+//Establece el alineamiento vertical en porcentaje con rango de 10 a 100% en saltos de 10%
+@mixin vertical-alignment-percentage {
+  @for $i from 1 through 10 {
+    $res: (percentage($i)/10);
+    .vertical-align-#{$i * 10}-per {
+      vertical-align:#{$res}
+    }
+  }
+}
+
+//Establece espacio entre palabras con rango de 1 a 10px con salto de 1px
+@mixin word-space {
+  @for $i from 1 through 10 {
+    .word-space-#{$i} {
+      word-spacing: #{$i}px;
+    }
+  }
+}
+
+//Establece un los tamanos de fuente en un rango de 8 a 44px y en rem con rango de 1 a 41rem
+@mixin f-size {
+  @for $i from 1 to 37 {
+    $sizeValue: 7 + $i;
+    .font-size-#{$sizeValue} {
+      font-size: ($sizeValue) + px
+    }
+  }
+  @for $i from 1 to 41 {
+    .font-size-#{$i}-rem {
+      font-size: ($i/10) + rem
+    }
+    ;
+  }
+}
+
+/*INCLUDES*/
+
+@include f-weight;
+@include l-height;
+@include indent;
+@include letter-space;
+@include vertical-alignment-px;
+@include vertical-alignment-percentage;
+@include word-space;
+@include f-size;
+
+/*SETTING UP CLASSES WITH FIXED VALUES*/
+
+//Establece una clase para no mostrar un elemento
+.display-none {
+  display: none;
+}
+
+/*TRANSFORM TEXT*/
+
+//Clase para evitar modificar el estilo de texto
+.transform-text-none {
+  text-transform: none;
+}
+
+//Establece la primera letra de todas las palabras en mayuscula
+.transform-text-cap {
+  text-transform: capitalize;
+}
+
+//Transforma todas las palabras a mayuscula
+.transform-text-up {
+  text-transform: uppercase;
+}
+
+//Transforma todas las palabras a minuscula
+.transform-text-low {
+  text-transform: lowercase;
+}
+
+//Establece que el texto se quede con las propiedades que le han sido heredadas
+.transform-text-inherit {
+  text-transform: inherit;
+}
+
+/*OVERFLOW*/
+
+//Indica que el texto que rebasa el contenedor no es accesible
+.overflow-clip {
+  text-overflow: clip;
+}
+
+//Establece que al rebasar el contenedor se presenta un ("...") para indicar existe mas texto
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+/*VERTICAL ALIGN*/
+
+//Establece una lineacion con la base del elemento padre
+.vertical-baseline {
+  vertical-align: baseline;
+}
+
+//Establece una lineacion con el elemento mas alto de la linea
+.vertical-top {
+  vertical-align: top;
+}
+
+//Establece que el elemento esta centrado segun el elemento padre
+.vertical-middle {
+  vertical-align: middle;
+}
+
+//Establece una lineacion con el elemento mas bajo de la linea
+.vertical-bottom {
+  vertical-align: bottom;
+}
+
+/*WHITE SPACE*/
+
+//Las secuencias de espacios en blanco se colapsaran en un solo espacio en blanco. El texto nunca se ajustara a la siguiente linea. El texto continua en la misma linea hasta que se encuentra una etiqueta <br>
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+//Integra todos los espacios en blanco consecutivos de la linea en uno solo
+.whitespace-preline {
+  white-space: pre-line;
+}
+//El texto se ajustara cuando sea necesario, y en los saltos de linea
+.whitespace-prewrap {
+  white-space: pre-wrap;
+}
+
+/*TEXT DECORATION: LINES*/
+
+//Coloca linea bajo el texto
+.text-underline {
+  text-decoration-line: underline;
+}
+
+//Coloca linea sobre el texto
+.text-overline {
+  text-decoration-line: overline;
+}
+//Coloca linea sobre el texto
+.text-decoration-none {
+  text-decoration: none;
+}
+//Coloca linea a traves el texto
+.text-line-through {
+  text-decoration-line: line-through;
+}
+
+/*TEXT DECORATION STYLE
+
+Establece que la linea que decora el texto puede tomar los siguientes estilos: solido, doble, punteada y con guion.
+*/
+.text-line-solid {
+  text-decoration-style: solid;
+}
+
+.text-line-double {
+  text-decoration-style: double;
+}
+
+.text-line-dotted {
+  text-decoration-style: dotted;
+}
+
+.text-line-dashed {
+  text-decoration-style: dashed;
+}
+
+.text-line-wavy {
+  text-decoration-style: wavy;
+}
+
+/*FONT STYLE*/
+
+//Establece el texto en italico
+.text-italic {
+  font-style: italic;
+}
+
+/*FONT VARIANT*/
+
+//Hace que todo el texto sea en mayusculas pero con proporcion de altura, es decir, la primera letra aparecera de mayor tamano
+.text-small-cap {
+  font-variant: small-caps;
+}
+
+/*TEXT ALIGN
+
+Establece que el texto puede alinearse a centro, izquierda, derecha y de manera justificada
+*/
+
+.text-align-center {
+  text-align: center
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-justify {
+  text-align: justify;
+}

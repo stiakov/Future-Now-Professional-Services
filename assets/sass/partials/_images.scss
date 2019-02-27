@@ -1,0 +1,71 @@
+
+/*ALIGNING IMAGES*/
+@mixin none-float {
+  .float-none{
+    float: none;}
+  }
+  @mixin right-float {
+    .float-right{
+      float: right;}
+    }
+    @mixin left-float {
+      .float-left{
+        float: left;}
+      }
+      @mixin clear {
+        .clear{
+          display: block;
+          clear: both;
+          content: "";
+        }
+      }
+      
+      @mixin fluid-img {
+        .fluid-img{
+  max-width: 100%;
+  height: auto;
+  // this makes it responsive
+}
+}
+@mixin img-opacity {
+  $count: 5;
+  $num:0.05;
+  @for $i from 1 through 20{
+    $res: ($count);
+    .img-opacity-#{$count} {
+      opacity:$num;
+      $count: $count + 5;
+      $num: $num + .05;
+    }
+  }
+}
+
+@mixin img-grayscale {
+  $count: 5;
+  @for $i from 1 through 20{
+    $res: (percentage($count)/100);
+    .img-grayscale-#{$count} {
+      filter: grayscale($res);
+      $count: $count +5;
+    }
+  }
+}
+
+/*INCLUDES*/
+@include none-float;
+@include right-float;
+@include left-float;
+@include clear;
+@include fluid-img;
+@include img-opacity;
+@include img-grayscale;
+
+/*
+.float-none -> Asigna float none a los elementos que tienen posicion diferente a absolut
+.float-right -> Asigna float none a los elementos que tienen posicion diferente a absolut
+.float-left -> Asigna float none a los elementos que tienen posicion diferente a absolut
+.clear -> Limpia ambos lados del contenedor para evitar tener cajas flotantes adyacentes.
+
+.img-opacity-5 -> Rango 5, 10, 15 ... 100. Setea la opacidad de una imagen siendo 5 el minimo de opacidad y 100 es el max.
+.img-grayscale-5 -> Rango 5, 10, 15 ... 100. Setea la escala de grises de una imagen siendo 5 el minimo de color y 100 el max.
+*/

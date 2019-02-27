@@ -1,0 +1,119 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin size-setter {
+  $leng: 12;
+  @for $i from 1 through 12 {
+    .col-#{$leng} {width: 8.333333% * $leng;}          
+    .col-#{$leng}-vw {width: 8.333333vw * $leng;}
+    $leng: $leng - 1;      
+  }
+
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5% * 10);
+    $name: ($i * 0.5 * 10);
+    .w-#{$name}-per {width: $mult;}      
+  }
+}
+
+
+@mixin size-md-setter {
+  $leng: 12;
+  @for $i from 1 through 12 {
+    .col-md-#{$leng} {width: 8.333333% * $leng;}          
+    .col-md-#{$leng}-vw {width: 8.333333vw * $leng;}
+    $leng: $leng - 1;      
+  }
+  
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5% * 10);
+    $name: ($i * 0.5 * 10);
+    .w-md-#{$name}-per {width: $mult;}      
+  }
+}
+
+@mixin size-sm-setter {
+  $leng: 12;
+  @for $i from 1 through 12 {
+    .col-sm-#{$leng} {width: 8.333333% * $leng;}          
+    .col-sm-#{$leng}-vw {width: 8.333333vw * $leng;}
+    $leng: $leng - 1;      
+  }
+  
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5% * 10);
+    $name: ($i * 0.5 * 10);
+    .w-sm-#{$name}-per {width: $mult;}      
+  }
+}
+
+@mixin height_setter {
+  @for $i from 1 through 600 {
+    .h-#{$i} {height: #{$i}px; }
+  }
+  @for $i from 1 through 20 {
+    $mult: ($i * 0.5vh * 10);
+    $name: ($i * 0.5 * 10);
+    .h-#{$name}-vh {height: $mult;}      
+  }
+}
+
+@include height_setter();
+@include size-setter();
+
+
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+  );
+@mixin md($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @include size-md-setter();
+      
+      
+    }
+  }
+}
+    
+@mixin sm($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @include size-sm-setter();
+      
+      
+    }
+  }
+}
+
+@include md('tablet-wide', 'max');
+@include sm('tablet-small', 'max');
+/* 
+.col-12 ->  [Rango: 1 a 12] - Asigna el ancho a doce columnas del grid lo que equivale al 100% del contenedor.
+.col-12-vw ->  [Rango: 1 a 12] - Asigna el ancho a doce columnas del grid lo que equivale al 100% del ancho de la pantalla.
+.w-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
+.col-md-12 -> [Rango: 1 a 12] - las clases col-md-## aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.col-md-12-vw -> [Rango: 1 a 12] - las clases col-md-##-vw aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.w-md-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
+.col-sm-12 -> [Rango: 1 a 12] - las clases col-md-## aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.col-sm-12-vw -> [Rango: 1 a 12] - las clases col-md-##-vw aplican para pantallas con tamanos superiores a 640px y menores a 1024px.
+.w-sm-5-per -> [Rango: 5 a 100 con saltos de 5 unidades] Asigna el ancho de una columna o contenedor al porcentaje que determine el nombre de la clase.
+.h-1 -> [Rango: 1 a 600 px] Asigna la altura de un contenedor entre 1 y 600 pixeles segun el numero que determine en la clase
+.h-5-vw -> [Rango: 5 a 100 vw] Asigna la altura de un contenedor entre 5 y 100 viewWidth segun el numero que determine en la clase. El rango va saltando de .5
+*/

@@ -1,0 +1,17 @@
+$pos-prop: (
+  static,
+  relative,
+  fixed,
+  absolute,
+  sticky
+);
+
+@each $item in $pos-prop {
+  .position-#{$item} {
+    position: $item;
+  }
+}
+
+.basic-outline {
+  outline: $gray300 solid thin;
+}

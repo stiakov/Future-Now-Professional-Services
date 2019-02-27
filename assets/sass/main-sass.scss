@@ -1,0 +1,99 @@
+// @import "/Users/stiakov/Documents/microverse/the_odin_project/CSS-Framework-with-SASS/assets/sass/partials";
+// @import "/Users/elizabethvillalejos/Documents/Projects/Microverse/CSS-Framework-with-SASS/css/";
+
+@import "partials/_variables.scss";
+@import "partials/_reset-src.scss";
+@import "partials/_colors.scss";
+@import "partials/_flex.scss";
+@import "partials/_sizes.scss";
+@import "partials/_paddings-margins.scss";
+@import "partials/_text.scss";
+@import "partials/_tables.scss";
+@import "partials/_images.scss";
+@import "partials/_position.scss";
+@import "partials/_navbar.scss";
+
+.main-container {
+  width: 100vw;
+  height: auto;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.cardboard {
+  background: white;
+  border: .5px solid $gray200;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.shadow-cardboard {
+  background: white;
+  border: .5px solid $gray200;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(180, 179, 179);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.classxxxx{
+  display: block;
+}
+// .main-background {
+//   background: url(../img/pineapple-supply-co-142104-unsplash.jpg) no-repeat center center fixed; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   position: relative;
+// }
+
+#blurred-image-container {
+  display:block;
+  padding:0;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:-1;
+}
+
+.img-src { 
+  position: absolute;
+  background: url(https://images.unsplash.com/photo-1476445704028-a36e0c798192?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9) center center; 
+  background-size: cover;
+  top: -10%;
+  bottom: 10%;
+  left: -10%;
+  right: 10%;
+  width:120%;
+  height:120%;
+}
+
+.img-src.blurred-image {
+  opacity:0;
+  -webkit-filter: blur(20px) brightness(0.7);
+  -ms-filter: blur(20px) brightness(0.7);
+  -o-filter: blur(20px) brightness(0.7);
+  filter: blur(20px) brightness(1);
+}
+
+.abs-position {
+  position: absolute;
+}
+
+.center-abs {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.block {
+  display: block;
+}

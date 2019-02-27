@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
-        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
-    <title>Future Now</title>
-</head>
-<body>
-    <nav class="nav-bar">
-        <div class="nav-logo"></div>
-        <div class="nav-links">
-            <ul>
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Demo book</li>
-                <li class="nav-item">About</li>
-                <li class="nav-item">Profiles</li>
-                <li class="nav-item">Contact</li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="main-container">
-        <div class="landing"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <title>Future Now</title>
+</head>
+
+<body class="f-family-roboto font-size-14">
+  <nav class="nav-bar">
+    <div class="nav-logo"></div>
+    <div class="nav-links d-flex at-end-hflex">
+      <ul class="flow-row-nowrap d-flex m-t-50 transform-text-up">
+        <li class="m-lr-15"><a class="f-family-open-sans f-weight-400 text-decoration-none nav-item color-gray-100" href="#home">Home</a>
+        </li>
+        <li class="m-lr-15"><a class="f-family-open-sans f-weight-400 text-decoration-none nav-item color-gray-100"
+            href="#projects">Projects</a>
+        </li>
+        <li class="m-lr-15"><a class="f-family-open-sans f-weight-400 text-decoration-none nav-item color-gray-100"
+            href="#about">About</a>
+        </li>
+        <li class="m-lr-15"><a class="f-family-open-sans f-weight-400 text-decoration-none nav-item color-gray-100"
+            href="#profiles">Profiles</a>
+        </li>
+        <li class="m-lr-15"><a class="f-family-open-sans f-weight-400 text-decoration-none nav-item color-gray-100"
+            href="#contacts">Contacts</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <div class="w-100-vw h-100-vh">
+    <div id="blurred-image-container">
+      <div class="img-src"></div>
+      <div class="img-src blurred-image"></div>
+    </div>
+    <div class="abs-position center-abs">
+      <div
+        class="block font-size-40-rem m-lr-auto text-align-center d-flex f-family-pacifico at-middle-hflex at-center-vflex f-weight-400 color-gray-100 text-shadow">
+        Hopp'ipolla</div>
+      <div
+        class="block font-size-18-rem m-lr-auto text-align-center d-flex f-family-merri at-middle-hflex at-center-vflex f-weight-400 m-t-25 color-gray-100 text-shadow-outline">
+        CSS Framework</div>
+      <div
+        class="block font-size-14-rem m-lr-auto text-align-center f-family-merri at-middle-hflex at-center-vflex f-weight-400 text-shadow">
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="main-container">
+    <div class="landing"></div>
+  </div>
 </body>
+
 </html>

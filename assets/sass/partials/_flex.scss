@@ -1,0 +1,99 @@
+/*Activa flex*/
+.d-flex {
+    display: flex;
+}
+
+.dir-flex-row {
+    flex-direction: row
+}
+/*Activa la direccion en fila*/
+
+//Activa la direccion en columna
+.dir-flex-col {
+    flex-direction: column
+}
+
+//Permite que los valores de la fila no la sobrepasen cuando su ancho disminuya
+.flow-row-nowrap {
+    flex-flow: row nowrap
+}
+
+//Permite que los valores de la columna no la sobrepasen cuando su ancho disminuya
+.flow-col-nowrap {
+    flex-flow: column nowrap
+}
+
+//Permite ajustar los valores de la fila al disinuir el ancho
+.flow-row-wrap {
+    flex-flow: row wrap
+}
+
+//Permite ajustar los valores de la columna al disinuir el ancho
+.flow-col-wrap {
+    flex-flow: column wrap
+}
+
+//Agrupa el contenido al inicio del contenedor (horizontal)
+.at-start-hflex {
+    justify-content: flex-start;
+}
+
+//Agrupa el contenido al centro del contenedor (horizontal)
+.at-center-hflex {
+    justify-content: center;
+}
+
+//Agrupa el contenido al final del contenedor (horizontal)
+.at-end-hflex {
+    justify-content: flex-end;
+}
+
+//Agrupa el contenido al inicio del contenedor (vertical)
+.at-top-vflex {
+    align-content: flex-start;
+}
+
+//Agrupa el contenido al centro del contenedor (vertical)
+.at-middle-vflex {
+    align-content: center;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+//Agrupa el contenido al final del contenedor (vertical)
+.at-bottom-vflex {
+    align-content: flex-end;
+}
+
+//Posiciona elementos de tal manera que el espacio entre ellos siempre es el mismo
+.around-item-flex {
+    justify-content: space-around;
+}
+
+//Posiciona elementos con el espacio uniforme entre lineas
+.between-item-flex {
+    justify-content: space-between;
+}
+
+/*MIXINS
+Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
+
+$num: 12;
+@mixin order-setter {
+  @for $i from 1 through $num {
+      .order-#{$i} { order:$i; }
+  }
+}
+
+//Se crea una escala de ordenes para el posicionamiento al frente, comprende del -1 al -3
+
+$neg-num: -3;
+@mixin order-neg-setter {
+  @for $i from $neg-num through -1 {
+      .order-neg#{$i} { order:$i; }
+  }
+}
+
+@include order-setter();
+@include order-neg-setter();
