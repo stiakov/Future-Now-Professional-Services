@@ -20,8 +20,8 @@
       .bg-bw-#{$i*100} {background:darken(black, $i*8.33%); }
       .color-bw-#{$i*100} {color:darken(black, $i*8.33%); }
     }
-    .bg-bw-0 {background:darken(black, 0%); }
-    .color-bw-0 {color:darken(black, 0%); }}
+    .bg-bw-0 {background:lighten(black, 0%); }
+    .color-bw-0 {color:lighten(black, 0%); }}
 
 @include color-setter();
 
