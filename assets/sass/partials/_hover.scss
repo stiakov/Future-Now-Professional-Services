@@ -10,14 +10,16 @@
   }
 }
 
-.hover-white {
-  div:hover {
-    opacity: 0.1;
+.hover-white:hover {
+  a {
+    visibility: hidden;
   }
-  span:hover {
-    visibility: visible;
-    color:black;
-    text-align: center;
-    font-size: 20px;
-  }
+  // div:hover > span {
+  //   opacity: 1;
+  //   visibility: visible;
+  //   color:black;
+  //   text-align: center;
+  //   font-size: 20px;
+  //   z-index: 1000;
+  // }
 }
