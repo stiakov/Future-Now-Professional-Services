@@ -6,9 +6,9 @@ In this project we are applying our own CSS framework, H'olipolla which was comp
 
 We are basing our design from these site templates:
 
- - [Sonora] (https://sonora-demo.squarespace.com/) for hover behavior in navbar and photo setup
- - [Jasper] (https://jasper-demo.squarespace.com/) for hover behavior in pictures
- - [Burke] (https://burke-demo.squarespace.com/) for general layout styling
+ - [Sonora](https://sonora-demo.squarespace.com/) for hover behavior in navbar and photo setup
+ - [Jasper](https://jasper-demo.squarespace.com/) for hover behavior in pictures
+ - [Burke](https://burke-demo.squarespace.com/) for general layout styling
 
 ## Developers Team
 
