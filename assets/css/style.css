@@ -506,6 +506,11 @@ rango 100 - 1200 con saltos de 100 en 100
 .d-flex {
   display: flex; }
 
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .dir-flex-row {
   flex-direction: row; }
 
@@ -7901,9 +7906,6 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   width: 100%;
   min-width: 100%;
   min-height: 100%; }
-
-.img-description {
-  visibility: hidden; }
 
 .img-small {
   width: 50%;

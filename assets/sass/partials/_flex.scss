@@ -3,6 +3,11 @@
     display: flex;
 }
 
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .dir-flex-row {
     flex-direction: row
 }
