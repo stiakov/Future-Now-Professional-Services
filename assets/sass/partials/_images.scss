@@ -81,6 +81,12 @@
   width: 100%;		/* desired width */
   box-sizing: border-box;
 }
+
+.box-square-min{
+	position: relative;
+  width: 50%;		/* desired width */
+  box-sizing: border-box;
+}
 .box-square:before{
   content: "";
 	display: block;
@@ -101,4 +107,9 @@
 }
 .img-description{
   visibility: hidden;
+}
+
+.img-small{
+  width: 50%;
+  height: auto;
 }

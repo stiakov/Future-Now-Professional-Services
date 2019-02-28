@@ -6644,6 +6644,66 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .font-size-40-rem {
   font-size: 4rem; }
 
+.heading-1 {
+  font-size: 14px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-2 {
+  font-size: 28px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-3 {
+  font-size: 42px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-4 {
+  font-size: 56px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-5 {
+  font-size: 70px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-6 {
+  font-size: 84px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-7 {
+  font-size: 98px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-8 {
+  font-size: 112px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-9 {
+  font-size: 126px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.heading-10 {
+  font-size: 140px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 .display-none {
   display: none; }
@@ -7818,6 +7878,12 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   /* desired width */
   box-sizing: border-box; }
 
+.box-square-min {
+  position: relative;
+  width: 50%;
+  /* desired width */
+  box-sizing: border-box; }
+
 .box-square:before {
   content: "";
   display: block;
@@ -7837,6 +7903,10 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 .img-description {
   visibility: hidden; }
+
+.img-small {
+  width: 50%;
+  height: auto; }
 
 .position-static {
   position: static; }

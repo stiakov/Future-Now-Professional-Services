@@ -145,6 +145,18 @@ $open-sans: 'Open Sans Condensed', sans-serif;
   }
 }
 
+@mixin headings {
+  @for $i from 1 through 10 {
+    $res: (($i)*14);
+    .heading-#{$i} {
+      font-size:#{$res}px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
 /*INCLUDES*/
 
 @include f-weight;
@@ -155,6 +167,7 @@ $open-sans: 'Open Sans Condensed', sans-serif;
 @include vertical-alignment-percentage;
 @include word-space;
 @include f-size;
+@include headings;
 
 /*SETTING UP CLASSES WITH FIXED VALUES*/
 
