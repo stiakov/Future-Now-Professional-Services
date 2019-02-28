@@ -7953,7 +7953,7 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   opacity: 1.0; }
 
 .hover-white:hover a {
-  visibility: hidden; }
+  opacity: 0; }
 
 .main-container {
   width: 100vw;
