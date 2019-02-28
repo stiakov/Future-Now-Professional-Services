@@ -7908,8 +7908,8 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   min-height: 100%; }
 
 .img-small {
-  width: 50%;
-  height: auto; }
+  width: 3rem;
+  height: 3rem; }
 
 .position-static {
   position: static; }
