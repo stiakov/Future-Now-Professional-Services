@@ -4369,6 +4369,9 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .text-shadow {
   text-shadow: 1px 1px 2px gray; }
 
+.text-shadow-black {
+  text-shadow: 5px 1px 2px black; }
+
 .text-shadow-outline {
   text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
 
@@ -7888,7 +7891,8 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   position: relative;
   width: 50%;
   /* desired width */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  min-height: 100%; }
 
 .box-square:before {
   content: "";
@@ -7910,6 +7914,10 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 .img-small {
   width: 3rem;
   height: 3rem; }
+
+.img-md {
+  width: 8rem;
+  height: 8rem; }
 
 .position-static {
   position: static; }
@@ -7935,6 +7943,12 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 .nav-item {
   display: inline-block; }
+
+.nav-anchor {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem; }
 
 .navbar-fixed {
   top: 0;

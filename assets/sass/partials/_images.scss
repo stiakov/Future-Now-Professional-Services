@@ -87,6 +87,8 @@
 	position: relative;
   width: 50%;		/* desired width */
   box-sizing: border-box;
+  min-height: 100%;
+
 }
 .box-square:before{
   content: "";
@@ -110,4 +112,9 @@
 .img-small{
   width: 3rem;
   height: 3rem;
+}
+
+.img-md{
+  width: 8rem;
+  height: 8rem;
 }
