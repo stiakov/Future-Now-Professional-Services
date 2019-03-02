@@ -157,11 +157,11 @@
 
     <div id="profiles" class="w-80-per m-lr-auto d-flex flow-row-wrap around-item-flex">
       <p class="heading-4 col-12 p-b-50 p-t-80 color-gray-100 text-shadow-black">Profiles</p>
-      <div class="col-5 col-md-5 col-sm-12 color-bw-1100 shadow-cardboard flow-row-wrap">
-        <div id="santiago" class="col-3 d-flex flow-col-nowrap">
-          <img class="rounded-border-50-per img-md"
+      <div class="col-5 col-md-12 col-sm-12 d-flex flow-row-nowrap shadow-cardboard">
+        <div id="santiago" class="col-5 col-md-5 col-sm-12 d-flex flow-col-wrap m-lr-auto centered-content">
+          <img class="rounded-border-50-per img-md centered-content"
             src="https://pbs.twimg.com/profile_images/613173179960459264/1v6jgy4o_400x400.jpg" alt="s-pic">
-          <div id="social" class="color-bw-0 text-align-center">You can reach Santiago at:
+          <div id="social" class="color-bw-0 text-align-center"><p class="f-family-open-sans font-size-13-rem font-weight-500">You can reach Santiago at:</p>
             <ul>
               <li class="nav-item"><a class="nav-anchor" href="https://github.com/stiakov">Github</a></li>
               <li class="nav-item"><a class="nav-anchor" href="https://dev.to/stiakov">Dev.to</a></li>
@@ -169,38 +169,39 @@
             </ul>
           </div>
         </div>
-        <div id="bio" class="color-bw-0 flow-row-wrap d-flex col-8 float-right">hola, voy a la derecha de la foto!
-        <ul>About me:
-        <li>▹Web Design specialist</li>
-        <li>▹Enjoys building clean, clear websites</li>
-        <li>▹Spends his free time learning</li>
-        <li>▹Great with algorithms</li>
-      </ul>
-    </div>
+        <div class="col-5 col-md-6 col-sm-12 d-flex flow-col-nowrap m-lr-auto centered-content">
+          <ul><p class="f-family-open-sans font-size-13-rem font-weight-500 p-b-10">About me:</p>
+            <li>▹Web Design specialist</li>
+            <li>▹Enjoys building clean, clear websites</li>
+            <li>▹Spends his free time learning</li>
+            <li>▹Great with algorithms</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-5 col-md-6 col-sm-12 color-bw-1100 shadow-cardboard">
-        <div id="eli" class="col-3 d-flex flow-col-nowrap">
-            <img class="rounded-border-50-per img-md"
-              src="https://pbs.twimg.com/profile_images/1100199767924191232/Uz1hFszX_400x400.jpg" alt="e-pic">
-            <div id="social" class="color-bw-0 text-align-center">You can reach Eli at:
-              <ul>
-                <li class="nav-item"><a class="nav-anchor" href="https://github.com/misselliev">Github</a></li>
-                <li class="nav-item"><a class="nav-anchor" href="https://dev.to/misselliev">Dev.to</a></li>
-                <li class="nav-item"><a class="nav-anchor" href="https://twitter.com/miss_elliev">Twitter</a></li>
-              </ul>
-            </div>
-        </div>
-          <div id="bio" class="color-bw-0 flow-row-wrap d-flex col-8 float-right">hola, voy a la derecha de la foto!
-              <ul>About me:
-              <li>▹Web Design specialist</li>
-              <li>▹Enjoys beautiful mobile websites</li>
-              <li>▹Spends her free time reading to her dog</li>
-              <li>▹Great with creative solutions</li>
+      <div class="col-5 col-md-12 col-sm-12 d-flex flow-row-nowrap shadow-cardboard">
+        <div id="eli" class="col-5 col-md-5 col-sm-12 d-flex flow-col-wrap m-lr-auto centered-content">
+          <img class="rounded-border-50-per img-md centered-content"
+            src="https://pbs.twimg.com/profile_images/1100199767924191232/Uz1hFszX_400x400.jpg" alt="e-pic">
+          <div id="social" class="color-bw-0 text-align-center"><p class="f-family-open-sans font-size-13-rem font-weight-500">You can reach Eli at:</p>
+            <ul>
+              <li class="nav-item"><a class="nav-anchor" href="https://github.com/misselliev">Github</a></li>
+              <li class="nav-item"><a class="nav-anchor" href="https://dev.to/misselliev">Dev.to</a></li>
+              <li class="nav-item"><a class="nav-anchor" href="https://twitter.com/miss_elliev">Twitter</a></li>
             </ul>
           </div>
         </div>
+        <div class="col-5 col-md-6 col-sm-12 d-flex flow-col-nowrap m-lr-auto centered-content">
+          <ul><p class="f-family-open-sans font-size-13-rem font-weight-500 p-b-10">About me:</p>
+            <li>▹Web Design specialist</li>
+            <li>▹Enjoys beautiful mobile websites</li>
+            <li>▹Spends her free time reading to her dog</li>
+            <li>▹Great with creative solutions</li>
+          </ul>
+        </div>
       </div>
+    </div>
+
 
     <div id="#contact" class="w-80-per m-lr-auto d-flex flow-row-wrap around-item-flex">
       <p class="heading-4 col-12 p-b-50 p-t-60 color-gray-100 text-shadow-black">Contact us</p>
@@ -208,10 +209,11 @@
         <div id="contact" class="box-square-min">
           <form id="contact-form" class="color-bw-0 p-t-20 p-b-10">
             <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required><br><br>
-            <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required><br><br>
-            <label>Please let us know if there's something specific we can help you with:<br><br>
-            <textarea rows="4" cols="50"></textarea><br><br>
-            <input type="submit" id="submit">
+              <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email"
+                  required><br><br>
+                <label>Please let us know if there's something specific we can help you with:<br><br>
+                  <textarea rows="4" cols="50"></textarea><br><br>
+                  <input type="submit" id="submit">
           </form>
         </div>
       </div>
