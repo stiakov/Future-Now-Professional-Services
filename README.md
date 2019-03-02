@@ -17,7 +17,7 @@ We are basing our design from these site templates:
 
 ## Live Demo
 
-You can visit our live version [here](https://stiakov.github.io/CSS-Framework-with-SASS/).
+You can visit our live version [here](https://stiakov.github.io/octo-umbrella/).
 
 
 ## Indications
