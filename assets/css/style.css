@@ -4363,6 +4363,21 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .f-family-roboto {
   font-family: "Roboto", sans-serif; }
 
+.f-family-lato {
+  font-family: "Lato", sans-serif; }
+
+.f-family-merri {
+  font-family: "Merriweather", serif; }
+
+.f-family-arvo {
+  font-family: "Arvo", serif; }
+
+.f-family-anton {
+  font-family: "Anton", sans-serif; }
+
+.f-family-pacifico {
+  font-family: "Pacifico", cursive; }
+
 .f-family-open-sans {
   font-family: "Open Sans Condensed", sans-serif; }
 
