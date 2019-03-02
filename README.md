@@ -31,7 +31,6 @@ You can check or edit all the partials and the main-sass.scss in the /assets/sas
 
 ## Useful links
 
-Taken from [The  Odin  Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework)
 [About Sass](https://sass-lang.com/)
 
 

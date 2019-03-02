@@ -6,13 +6,13 @@
 //Estableciendo variables para las fuentes
 $roboto: 'Roboto',
 sans-serif;
-// $lato: 'Lato',
-// sans-serif;
-// $merri: 'Merriweather',
-// serif;
-// $arvo: 'Arvo', serif;
-// $anton: 'Anton', sans-serif;
-// $pacifico: 'Pacifico', cursive;
+$lato: 'Lato',
+sans-serif;
+$merri: 'Merriweather',
+serif;
+$arvo: 'Arvo', serif;
+$anton: 'Anton', sans-serif;
+$pacifico: 'Pacifico', cursive;
 $open-sans: 'Open Sans Condensed', sans-serif;
 
 //Creando las clases para font-family
@@ -20,34 +20,34 @@ $open-sans: 'Open Sans Condensed', sans-serif;
   font-family: $roboto;
 }
 
-// .f-family-lato {
-//   font-family: $lato;
-// }
+.f-family-lato {
+  font-family: $lato;
+}
 
-// .f-family-merri {
-//   font-family: $merri;
-// }
-// .f-family-arvo {
-//   font-family: $arvo;
-// }
+.f-family-merri {
+  font-family: $merri;
+}
+.f-family-arvo {
+  font-family: $arvo;
+}
 
-// .f-family-anton {
-//   font-family: $anton;
-// }
+.f-family-anton {
+  font-family: $anton;
+}
 
-// .f-family-pacifico {
-//   font-family: $pacifico;
-// }
+.f-family-pacifico {
+  font-family: $pacifico;
+}
 .f-family-open-sans {
   font-family: $open-sans;
 }
 
 .text-shadow {
   text-shadow: 1px 1px 2px gray;
-  // -1px -1px 0 #000,
-  // 1px -1px 0 #000,
-  // -1px 1px 0 #000,
-  // 1px 1px 0 #000;
+}
+
+.text-shadow-black {
+  text-shadow: 5px 1px 2px black;
 }
 
 .text-shadow-outline {

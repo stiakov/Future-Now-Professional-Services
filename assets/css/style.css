@@ -4363,11 +4363,29 @@ Se crea una escala de ordenes para el posicionamiento, comprende del 1 al 12*/
 .f-family-roboto {
   font-family: "Roboto", sans-serif; }
 
+.f-family-lato {
+  font-family: "Lato", sans-serif; }
+
+.f-family-merri {
+  font-family: "Merriweather", serif; }
+
+.f-family-arvo {
+  font-family: "Arvo", serif; }
+
+.f-family-anton {
+  font-family: "Anton", sans-serif; }
+
+.f-family-pacifico {
+  font-family: "Pacifico", cursive; }
+
 .f-family-open-sans {
   font-family: "Open Sans Condensed", sans-serif; }
 
 .text-shadow {
   text-shadow: 1px 1px 2px gray; }
+
+.text-shadow-black {
+  text-shadow: 5px 1px 2px black; }
 
 .text-shadow-outline {
   text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray; }
@@ -7888,7 +7906,8 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   position: relative;
   width: 50%;
   /* desired width */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  min-height: 100%; }
 
 .box-square:before {
   content: "";
@@ -7908,8 +7927,12 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
   min-height: 100%; }
 
 .img-small {
-  width: 50%;
-  height: auto; }
+  width: 3rem;
+  height: 3rem; }
+
+.img-md {
+  width: 9rem;
+  height: 9rem; }
 
 .position-static {
   position: static; }
@@ -7935,6 +7958,12 @@ Crea bordes en los estilos: solido, punteado, guion y doble en un rango de 1 a 1
 
 .nav-item {
   display: inline-block; }
+
+.nav-anchor {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem; }
 
 .navbar-fixed {
   top: 0;
