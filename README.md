@@ -1,6 +1,6 @@
 # Future Now Professional Services
 
-In this project we are applying our own CSS framework, Hopp'ipolla which was complied with SASS.
+In this project we are applying our own CSS framework, Hopp'ipolla which was compiled with SASS.
 
 ## References
 
